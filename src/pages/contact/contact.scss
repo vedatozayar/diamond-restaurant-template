@@ -1,0 +1,106 @@
+.contact {
+  background-color: #ffdd00;
+  .contact-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    min-height: 90vh;
+    z-index: 1;
+    position: relative;
+    .header-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #eee;
+        padding-bottom: 2rem;
+        span {
+          color: #ffdd00;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .form-container {
+    background-color: #000;
+    width: 90%;
+    margin: auto;
+    .form {
+      color: #ebebee;
+      padding: 2rem 1rem;
+
+      .form-element {
+        display: flex;
+        flex-direction: column;
+        textarea {
+          height: 13rem;
+        }
+        button {
+          color: #000;
+          font-weight: 600;
+          padding: 1rem 0;
+          margin: 1rem 0;
+          cursor: pointer;
+          background-color: #ffdd00;
+        }
+        label {
+          padding: 1rem 0;
+        }
+        .input {
+          background-color: #222;
+          padding: 0.5rem;
+          color: #ebebee;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .connect-info {
+    padding: 2rem;
+    .container {
+      h2 {
+        font-weight: 900;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+      }
+      .mail,
+      .phone {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 2rem;
+      }
+      .socials {
+        .icons {
+          padding-bottom: 2rem;
+          display: flex;
+          align-items: flex-start;
+          font-size: 1.5rem;
+          justify-content: flex-start;
+          gap: 1rem;
+          cursor: pointer;
+        }
+      }
+      .address {
+        .icon-container {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

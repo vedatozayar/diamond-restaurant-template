@@ -9,7 +9,7 @@ import {
   faQuoteRight,
   faSeedling,
   faUtensils,
-  faUtensilSpoon,
+  faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
   useEffect(() => {
@@ -18,16 +18,18 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='container'>
-        <div className='content'>
-          <h1>delicious food</h1>
-          <p>Diamond is a restaurant,bar and coffee located on London</p>
-          <Button className='button' text={'ORDER ONLINE'} />
-        </div>
-        <div className='arrow'>
-          <span></span>
-          <span></span>
-          <span></span>
+      <div className='home-container'>
+        <div className='container'>
+          <div className='content'>
+            <h1>delicious food</h1>
+            <p>Diamond is a restaurant,bar and coffee located on London</p>
+            <Button className='button' text={'ORDER ONLINE'} />
+          </div>
+          <div className='arrow'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
 
@@ -136,6 +138,82 @@ const Home = () => {
               <h4>lawyer</h4>
             </div>
             <Button text={'READ MORE'} />
+          </div>
+        </div>
+      </div>
+      <div className='gallery'>
+        <div className='container'>
+          <div className='header'>
+            <h2>
+              <span>our</span>
+              <br></br>gallery
+            </h2>
+          </div>
+          <div className='image-container'>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/1267315/pexels-photo-1267315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                alt=''
+              />
+            </div>
+            <div className='image'>
+              <img
+                src='https://images.unsplash.com/photo-1511017049469-e0d1ba0219a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+                alt=''
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='map'>
+        <div className='info'>
+          <h2 className='header'>
+            <span>findus</span>
+            <br></br>our address
+          </h2>
+          <div className='address'>
+            <div className='icon-container'>
+              <FontAwesomeIcon className='icon' icon={faLocationDot} />
+            </div>
+            <p>2603 Evergreen Lane,CA,90280</p>
+          </div>
+        </div>
+        <div className='map-container'>
+          <div className='map-cont'>
+            <img
+              src='https://d33wubrfki0l68.cloudfront.net/2b44292406de53564def263a6e986431b32a8163/70618/assets/img/snz.png'
+              alt='map'
+            />
           </div>
         </div>
       </div>
