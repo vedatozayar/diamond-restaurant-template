@@ -36,55 +36,69 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='inovation' data-aos='fade-up'>
-        <img
-          data-aos='fade-up'
-          src='https://images.pexels.com/photos/2497903/pexels-photo-2497903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          alt='inovation'
-        />
-        <h3>inovation</h3>
-        <div className='line'></div>
-        <p>
-          Evidence supports creativity and innovation as important drivers of
-          firm performance.
-        </p>
+      <div className='inovation'>
+        <div className='container' data-aos='fade-up'>
+          <img
+            src='https://images.pexels.com/photos/2497903/pexels-photo-2497903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt='inovation'
+          />
+          <div>
+            <h3>inovation</h3>
+            <div className='line'></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              non.
+            </p>
+          </div>
+        </div>
       </div>
-      <div data-aos='fade-up' className='inovation'>
-        <img
-          data-aos='fade-up'
-          src='https://images.pexels.com/photos/3296395/pexels-photo-3296395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          alt='inovation'
-        />
-        <h3>value</h3>
-        <div className='line'></div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-          inventore vel amet? Dolore, iste possimus.
-        </p>
+      <div className='inovation'>
+        <div data-aos='fade-up' className='container'>
+          <img
+            src='https://images.pexels.com/photos/3296395/pexels-photo-3296395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt='inovation'
+          />
+          <div>
+            <h3>value</h3>
+            <div className='line'></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              non.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className='inovation' data-aos='fade-up'>
-        <img
-          src='https://images.pexels.com/photos/5018987/pexels-photo-5018987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          alt='inovation'
-        />
-        <h3>motivation</h3>
-        <div className='line'></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, velit
-          perspiciatis. Temporibus expedita a totam.
-        </p>
+      <div className='inovation'>
+        <div data-aos='fade-up' className='container'>
+          <img
+            src='https://images.pexels.com/photos/5018987/pexels-photo-5018987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt='inovation'
+          />
+          <div>
+            <h3>motivation</h3>
+            <div className='line'></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              non.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className='inovation' data-aos='fade-up'>
-        <img
-          data-aos='fade-up'
-          src='https://images.pexels.com/photos/5019004/pexels-photo-5019004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          alt='inovation'
-        />
-        <h3>quality</h3>
-        <div className='line'></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non.
-        </p>
+      <div className='inovation'>
+        <div data-aos='fade-up' className='container'>
+          <img
+            src='https://images.pexels.com/photos/5019004/pexels-photo-5019004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt='inovation'
+          />
+          <div>
+            <h3>quality</h3>
+            <div className='line'></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              non.
+            </p>
+          </div>
+        </div>
       </div>
       <div className='team'>
         <div className='team-container'>
@@ -92,33 +106,35 @@ const About = () => {
             <span>Our</span>
             <br></br>team members
           </h1>
-          <div className='team-member' data-aos='fade-up'>
-            <img src={Chef} alt='chef' />
-            <h3>
-              <span>Chef</span>
-              <br></br>Alan Parker
-            </h3>
-          </div>
-          <div className='team-member' data-aos='fade-up'>
-            <img src={Chef} alt='chef' />
-            <h3>
-              <span>Chef</span>
-              <br></br>Alan Parker
-            </h3>
-          </div>
-          <div className='team-member' data-aos='fade-up'>
-            <img src={Chef} alt='chef' />
-            <h3>
-              <span>Chef</span>
-              <br></br>Alan Parker
-            </h3>
-          </div>
-          <div className='team-member' data-aos='fade-up'>
-            <img src={Chef} alt='chef' />
-            <h3>
-              <span>Chef</span>
-              <br></br>Alan Parker
-            </h3>
+          <div className='team-members'>
+            <div className='team-member' data-aos='fade-up'>
+              <img src={Chef} alt='chef' />
+              <h3>
+                <span>Chef</span>
+                <br></br>Alan Parker
+              </h3>
+            </div>
+            <div className='team-member' data-aos='fade-up'>
+              <img src={Chef} alt='chef' />
+              <h3>
+                <span>Chef</span>
+                <br></br>Alan Parker
+              </h3>
+            </div>
+            <div className='team-member' data-aos='fade-up'>
+              <img src={Chef} alt='chef' />
+              <h3>
+                <span>Chef</span>
+                <br></br>Alan Parker
+              </h3>
+            </div>
+            <div className='team-member' data-aos='fade-up'>
+              <img src={Chef} alt='chef' />
+              <h3>
+                <span>Chef</span>
+                <br></br>Alan Parker
+              </h3>
+            </div>
           </div>
         </div>
       </div>

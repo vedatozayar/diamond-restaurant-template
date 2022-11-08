@@ -104,3 +104,37 @@
     }
   }
 }
+
+@media screen and (min-width: 56.25em) {
+  .contact {
+    .contact-container {
+      .header-container {
+        h1 {
+          font-size: 4rem;
+          span {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    .contact-bottom {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      gap: 10rem;
+      padding-bottom: 6rem;
+      .form-container {
+        flex: 1;
+      }
+      .connect-info {
+        flex: 1;
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}

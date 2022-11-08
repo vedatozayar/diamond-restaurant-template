@@ -102,6 +102,13 @@
         font-size: 1rem;
         margin: 1rem 0;
       }
+      .button {
+        padding-top: 2rem;
+        button {
+          padding: 1rem 3rem;
+          font-weight: 900;
+        }
+      }
     }
     .image-container {
       img {
@@ -147,7 +154,10 @@
     }
     .button {
       text-align: center;
-      margin-top: 2rem;
+      margin: 2rem;
+      button {
+        text-transform: uppercase;
+      }
     }
   }
   .testimonial {
@@ -169,7 +179,10 @@
       .testi-cards {
         display: flex;
         flex-direction: column;
-        align-items: center;
+
+        min-height: 20rem;
+        margin: auto;
+
         justify-content: center;
         gap: 3rem;
 
@@ -194,6 +207,10 @@
             text-transform: uppercase;
           }
         }
+      }
+      .button {
+        text-align: center;
+        padding: 3rem;
       }
     }
   }
@@ -235,45 +252,52 @@
           overflow: hidden;
           grid-area: i1;
           object-fit: cover;
+          object-position: center;
         }
         :nth-child(2) {
           border-radius: 5px;
           overflow: hidden;
           object-fit: cover;
           grid-area: i2;
-          height: 6.7rem;
+          height: 100%;
+          object-position: center;
         }
         :nth-child(3) {
           border-radius: 5px;
           overflow: hidden;
           grid-area: i3;
           object-fit: cover;
-          height: 6.7rem;
+          height: 90%;
+          object-position: center;
         }
         :nth-child(4) {
           border-radius: 5px;
           overflow: hidden;
           object-fit: cover;
           grid-area: i4;
+          object-position: center;
         }
         :nth-child(5) {
           border-radius: 5px;
           overflow: hidden;
           object-fit: cover;
           grid-area: i5;
+          object-position: center;
         }
         :nth-child(6) {
           border-radius: 5px;
           overflow: hidden;
           object-fit: cover;
-          height: 6.7rem;
+          height: 90%;
           grid-area: i6;
+          object-position: center;
         }
         :nth-child(7) {
           border-radius: 5px;
           overflow: hidden;
           object-fit: cover;
           grid-area: i7;
+          object-position: center;
         }
       }
     }
@@ -285,34 +309,41 @@
     padding-top: 6.25rem;
 
     .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       background: linear-gradient(#222, #000);
       width: 90%;
-      margin: auto;
+
       border-radius: 5px;
-      max-width: 60rem;
+      max-width: 40rem;
+      margin: auto;
+
       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
       box-shadow: 2px 4px 10px 1px rgba(49, 49, 49, 0.47);
       color: white;
       padding: 4rem 4rem;
       position: absolute;
       top: 0;
-      left: 5%;
+      left: 50%;
+      transform: translate(-50%);
+
       text-align: center;
       .header {
         margin: 0;
         text-transform: uppercase;
+
         span {
           color: #ffdd00;
-          font-size: 1rem;
         }
       }
 
       .address {
-        padding-top: 2rem;
+        padding: 2rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 0;
+
+        gap: 1rem;
         .icon-container {
           font-size: 2rem;
         }
@@ -320,8 +351,179 @@
     }
     .map-container {
       img {
+        width: 100%;
         height: 20rem;
         object-fit: cover;
+      }
+    }
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 48em) {
+  .home {
+    .map {
+      .address {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .home {
+    .home-container {
+      .container {
+        .content {
+          h1 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .gallery {
+    }
+    .map {
+      .info {
+        .header {
+          font-size: 3rem;
+          span {
+            font-size: 2rem;
+          }
+        }
+        .address {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  .home {
+    .home-container {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1513491714241-33805f8ff175?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+      .container {
+        .content {
+          h1 {
+            font-size: 6rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .greetings {
+      padding-top: 6rem;
+      .greetings-container {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 2rem;
+        align-items: center;
+        .message {
+          flex: 3;
+          max-width: 70rem;
+          h2 {
+            font-size: 2.5rem;
+            span {
+              font-size: 1.5rem;
+            }
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+        .image-container {
+          flex: 2;
+          img {
+            width: 50%;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .map {
+      .info {
+        .header {
+          font-size: 3rem;
+          span {
+            font-size: 2rem;
+          }
+        }
+        .address {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .menu-features {
+      .button {
+        button {
+          font-size: 1.5rem;
+          padding: 1rem 4rem;
+        }
+      }
+      .container {
+        .header {
+          text-align: center;
+          h2 {
+            font-size: 3rem;
+            span {
+              font-size: 2rem;
+            }
+          }
+        }
+        .features-card {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          .card {
+            width: 31%;
+          }
+        }
+      }
+    }
+    .testimonial {
+      .container {
+        .header {
+          font-size: 2rem;
+          text-align: center;
+          span {
+            font-size: 2rem;
+          }
+        }
+        .testi-cards {
+          flex-direction: row;
+          .card {
+            width: 31%;
+          }
+        }
+      }
+    }
+    .gallery {
+      .container {
+        .header {
+          text-align: center;
+          h2 {
+            font-size: 3rem;
+            span {
+              font-size: 2rem;
+            }
+          }
+        }
+        .image-container {
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-areas:
+            'i1 i1 i2 i3'
+            'i1 i1 i4 i4'
+            'i5 i6 i4 i4'
+            'i7 i7 i7 i7'
+            'i7 i7 i7 i7';
+        }
       }
     }
   }
